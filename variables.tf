@@ -1,13 +1,27 @@
-# declare variables
-variable "vpc_cidr_block" {}
-variable "first_az" {}
-variable "second_az" {}
-variable "instance_type" {}
-variable "key_pair_name" {}
-variable "enviroment" {}
-variable "subnet_1_cidr" {}
-variable "subnet_2_cidr" {}
-variable "subnet_3_cidr" {}
-variable "subnet_4_cidr" {}
-variable "db_user_name" {}
-variable "db_password" {}
+variable "vpc_cidr_block" {
+  type = string
+}
+
+variable "first_az" {
+  type = string
+}
+
+variable "enviroment" {
+  type = string
+}
+
+variable "instance_type" {
+  type = string
+}
+
+variable "subnet_1_cidr" {
+  type = string
+}
+
+variable "subnet_2_cidr" {
+  type = string
+}
+
+variable "key_name" {
+  type = string
+}
