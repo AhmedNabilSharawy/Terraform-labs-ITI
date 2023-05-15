@@ -17,3 +17,10 @@ resource "aws_route_table" "my-private-rtb" {
     Name = "${var.env}-private-rtb"
   }
 }
+
+# route nat gateway
+# resource "aws_route" "private_nat_route" {
+#   route_table_id            = aws_route_table.my-private-rtb.id
+#   destination_cidr_block    = "0.0.0.0/0"
+#   nat_gateway_id            = aws_nat_gateway.my_nat_gateway.id
+# }

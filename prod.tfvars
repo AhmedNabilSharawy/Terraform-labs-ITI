@@ -1,6 +1,0 @@
-vpc_cidr_block   = "10.0.0.0/16"
-first_az = "us-east-1a"
-enviroment       = "prod"
-instance_type    = "t2.micro"
-subnet_1_cidr = "10.0.0.0/18"
-subnet_2_cidr = "10.0.64.0/18"
